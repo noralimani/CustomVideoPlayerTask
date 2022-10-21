@@ -3,7 +3,6 @@ const playBtn = document.getElementById("playButton");
 const audioBtn = document
   .getElementById("shadowPlayer")
   .shadowRoot.getElementById("play");
-const volumeSlider = document.getElementById("volumeSlider");
 const timestamp = document.getElementById("timestamp");
 let currentTime = 0;
 
