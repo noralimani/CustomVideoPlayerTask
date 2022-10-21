@@ -1,9 +1,9 @@
-let video = document.getElementById("tractiveVideo");
-let playBtn = document.getElementById("playButton");
-let audioBtn = document
+const video = document.getElementById("tractiveVideo");
+const playBtn = document.getElementById("playButton");
+const audioBtn = document
   .getElementById("shadowPlayer")
   .shadowRoot.getElementById("play");
-let volumeSlider = document.getElementById("volumeSlider");
+const volumeSlider = document.getElementById("volumeSlider");
 const timestamp = document.getElementById("timestamp");
 let currentTime = 0;
 
@@ -25,12 +25,12 @@ function updateProgress() {
   // Get minutes
   let mins = Math.floor(video.currentTime / 60);
   if (mins < 10) {
-    mins = "0" + String(mins);
+    mins = `0${String(mins)}`;
   }
   // Get seconds
   let secs = Math.floor(video.currentTime % 60);
   if (secs < 10) {
-    secs = "0" + String(secs);
+    secs = `0${String(secs)}`;
   }
 
   timestamp.innerHTML = `${mins}:${secs}`;
